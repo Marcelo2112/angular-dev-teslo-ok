@@ -1,0 +1,19 @@
+<!-- <h1 class="text-2xl"> {{productId()}}</h1> -->
+
+@if(produdctResource.isLoading()){
+
+<div class="flex justify-center items-center h-screen">
+  <span class="loading loading-spinner loading-lg"></span>
+</div>
+
+}
+
+
+
+@if(produdctResource.hasValue()){
+<!-- Producto -->
+<!-- <h1>{{produdctResource.value().title}}</h1> -->
+
+<product-details [product]="produdctResource.value()!" />
+
+}
