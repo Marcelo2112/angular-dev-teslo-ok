@@ -1,5 +1,7 @@
 <h1 class="text-3xl font-bold font-montserrat">Todos los productos {{paginationService.currentPage()}}</h1>
-<h2 class="text-xl">Para todos los gustos</h2>
+<!-- <h2 class="text-xl">Para todos los gustos</h2> -->
+<p class="text-xl">Favor esperar que la BDD se levante (2-3 min)</p>
+
 
 <app-pagination [pages]="productsResorce.value()?.pages ?? 0" [currentPage]="paginationService.currentPage()" />
 
